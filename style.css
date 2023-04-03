@@ -1,0 +1,238 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+
+section{
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 40px;
+    padding-top: 8%;
+    margin-bottom: 5px;
+}
+
+hr {
+    width: 30px;
+    height: 3px;
+    background: #494949;
+    border: 0px;
+    margin: 0 auto 40px auto;
+}
+
+/* Header ***************************************************/
+ 
+header {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: turquoise;
+    background-image: url(src/HeaderCP.svg);            
+    background-repeat: no-repeat;
+    background-position: 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+header nav {
+    float: right;
+    margin: -3px 45px 1px 0px;
+}
+
+header nav ul li {
+    float: left;
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+header nav ul li a img {
+    margin-top: -68px;
+    max-width: 150px;
+    max-height: 150px;   
+}
+
+/* Home ***************************************************/
+
+#home {
+    background-color: black;
+    background: url(src/CPCity.gif);
+    background-position: center, center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -200px;
+}
+
+#home h1 {
+    margin: 240px auto 0px auto;
+    font-size: 110px;
+}
+
+#home h2 {
+    margin: 0px auto 0px auto;
+    font-size: 25px;
+}
+
+.arrow-down {
+    width: 64px;
+    margin-top: 1064px;
+    opacity: 0.7;
+    transform: rotate(-90deg);
+}
+
+.HeaderAfter {
+    width: 1864px;
+    transform: rotate(180deg);
+    margin-bottom: -15px;
+}
+
+#home img:hover {
+    opacity: 1;
+}
+
+/* About ***************************************************/
+
+#about {
+    background-color: black;
+}
+
+#about img {
+    width: 240px;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#about h4 {
+    font-size: 25px;
+}
+
+#about p {
+    width: 700px;
+    margin: 0 auto 0 auto;
+}
+
+/* News ***************************************************/
+
+#news {
+    background: #f0f0f0;
+}
+
+#articles {
+    width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+#articles ul {
+    padding: 0;
+}
+
+#articles ul li {
+    width: 33.3%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#articles ul li a img:hover , #articles ul li a video:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#articles img {
+    width: 280px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+#articles video {
+    width: 280px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+/* Contact ***************************************************/
+
+
+#socialmedia {
+    width: 300px;
+    margin: 0 auto 0 auto;
+}
+
+#socialmedia ul {
+    padding: 0;
+}
+
+#socialmedia ul li {
+    width: 25%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#socialmedia img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#socialmedia img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+/* Impressum ***************************************************/
+
+#impressum {
+    background: #f0f0f0;
+}
+
+#impressum p {
+    width: 700px;
+    margin: 0 auto 0 auto;
+}
+
+/* Footer ***************************************************/
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: Black;
+}
+
+footer p {
+    font-size: 12px;
+    color: white;
+    padding-top: 30px;
+}
