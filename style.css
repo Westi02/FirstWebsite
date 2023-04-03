@@ -106,7 +106,7 @@ header nav ul li a img {
 }
 
 .HeaderAfter {
-    width: 1864px;
+    width: auto;
     transform: rotate(180deg);
     margin-bottom: -15px;
 }
