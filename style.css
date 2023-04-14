@@ -110,10 +110,15 @@ header nav ul li a img {
     transform: rotate(-90deg);
 }
 
-.HeaderAfter {
-    width: 100%;
+.HomeAfter {
+/*    width: 100%;
+    position:absolute; bottom: ; */
+    bottom: -2px;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    right: 0;
     transform: rotate(180deg);
-    margin-bottom: -1.39%;
 }
 
 #home img:hover {
