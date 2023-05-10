@@ -93,27 +93,29 @@ header nav ul li a img {
     margin-top: 0px;
 }
 
-#home h1 {
-    margin: 240px auto 0px auto;
-    font-size: 110px;
-}
-
-#home h2 {
-    margin: 0px auto 0px auto;
-    font-size: 25px;
-}
-
 .arrow-down {
     width: 64px;
-    margin-top: 1064px;
+    margin-top: 750px;
     opacity: 0.7;
     transform: rotate(-90deg);
 }
 
 .HomeAfter {
-/*    width: 100%;
-    position:absolute; bottom: ; */
+    width: 100%;
+    bottom: 100vh;
     bottom: -2px;
+    left: 0;
+    position: relative;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+#home::after {
+    background-image: url(src/HomeAfter.svg);
+    background-position: top;
+    background-repeat: repeat-x;
+    bottom: -2px;
+    content: "";
     height: 40px;
     left: 0;
     position: absolute;
