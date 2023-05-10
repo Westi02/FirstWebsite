@@ -1,12 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
-}
-
-
-html{
-    overflow-y: hidden;
 }
 
 html, body {
@@ -62,7 +56,6 @@ header {
     background-repeat: no-repeat;
     background-position: 0;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-    overflow-y: hidden;
 }
 
 header nav {
@@ -91,24 +84,13 @@ header nav ul li a img {
 
 /* Home ***************************************************/
 
-.home_bg {
-    /* box-sizing: border-box;  */
-    /* display: block;  */
-    width: 100vw;  
-    height: 95vh; 
-    padding: 0; 
-    margin: 0; 
-    top: -1rem;
-    position: relative;
-    /* background: url('src/CPCity.gif') no-repeat center center;   */
-    /* background-size: cover; */
-}
-
-.cityBG{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
+#home {
+    background-color: black;
+    background: url(src/CPCity.gif);
+    background-position: center, center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0px;
 }
 
 #home h1 {
@@ -122,22 +104,21 @@ header nav ul li a img {
 }
 
 .arrow-down {
-    position: absolute;
-    top: 920px;
     width: 64px;
+    margin-top: 1064px;
     opacity: 0.7;
     transform: rotate(-90deg);
 }
 
 .HomeAfter {
-    width: 100vw;
-    bottom: 0;
+/*    width: 100%;
+    position:absolute; bottom: ; */
+    bottom: -2px;
     height: 40px;
     left: 0;
     position: absolute;
     right: 0;
     transform: rotate(180deg);
-    top: 1040px;
 }
 
 #home img:hover {
@@ -147,7 +128,7 @@ header nav ul li a img {
 /* About ***************************************************/
 
 #about {
-    background-color: white;
+    background-color: black;
 }
 
 #about img {
