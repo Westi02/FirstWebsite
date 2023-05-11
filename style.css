@@ -154,7 +154,13 @@ header nav ul li a img {
     margin: 0 auto 0 auto;
 }
 
+#about::after{
+    content: "";
+}
+
+
 /* News ***************************************************/
+
 
 #news {
     background: #f0f0f0;
@@ -194,6 +200,11 @@ header nav ul li a img {
     border-radius: 5px;
 }
 
+#news::after{
+    content: "";
+}
+
+
 /* Contact ***************************************************/
 
 
@@ -223,6 +234,10 @@ header nav ul li a img {
     width: 60px;
     height: 60px;
     border-radius: 5px;
+}
+
+#socialmedia::after{
+    content: "";
 }
 
 /* Impressum ***************************************************/
