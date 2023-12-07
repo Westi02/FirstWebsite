@@ -1,21 +1,31 @@
+html {
+    box-sizing: border-box
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit
+}
+
+body,h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0
+}
 
 .header {
-    height: 100vh;
     position: relative;
+    height: 100vh;
     width: 100%
 }
 
-.header:before {
-    background-image: url(/src/dots-top-401abdab.png), url(/src/dots-bottom-27735777.png);
-    background-position: 20px 20px, 20px calc(100% - 183px);
-    background-repeat: repeat-x, repeat-x;
+.header:after {
+    background: linear-gradient(180deg, transparent, #000);
+    bottom: 0;
     content: "";
     display: block;
-    height: 100%;
-    pointer-events: none;
-    position: fixed;
-    top: 100;
-    width: 100%;
+    height: 302px;
+    pointer-events: none
 }
 
 .header video,
@@ -25,18 +35,14 @@
 }
 
 .header video {
-    /*height: 100%;
+    height: 100%;
     left: 0;
     object-fit: cover;
-    top: 0;*/
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    top: 0
 }
 
 .header-top {
+    align-items: self-start;
     display: flex;
     justify-content: space-between;
     left: 0;
@@ -69,6 +75,14 @@
     visibility: visible
 }
 
+.header-top-menubutton{
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    display: none;
+    cursor: pointer;
+}
+
 @media (min-width:1200px) {
     .header-top:before {
         background: linear-gradient(180deg, rgba(0, 0, 0, .65), transparent);
@@ -88,12 +102,35 @@
         opacity: 1
     }
 }
+@media (min-width: 0px) and (max-width: 750px){
+    .header-top-menubutton{
+        display: block;
+    }
+
+    .header-top__logo img {
+        position: absolute;
+        width: 100%;
+    }
+    
+    .header-top__logo-yellow {
+        filter: drop-shadow(0 2px 7px rgba(0, 0, 0, .38)) drop-shadow(0 4px 16px rgba(0, 0, 0, .25));
+        opacity: 1;
+        visibility: visible
+    }
+}
+@media (max-width: 1199px){
+
+}
 @media (min-width:1200px) {
 
     .menu {
         clip-path: polygon(16px 0, 100% 0, 100% 30px, calc(100% - 18px) 48px, calc(100% - 18px) 2000%, 0 2000%, 0 16px);
         margin-top: 36px;
         position: relative
+    }
+
+    .menu:lang(ar) {
+        clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 2000%, 18px 2000%, 18px 48px, 0 30px)
     }
 
     .menu:before {
@@ -179,4 +216,10 @@
         background: #fcee0a;
         color: #000000
     }
+}
+.home-section video {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    top: 0
 }
